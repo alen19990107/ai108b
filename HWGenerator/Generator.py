@@ -1,20 +1,20 @@
 import random as r
 
 role =[]
-look = ['看起來','感覺']
-adverb = ['很','非常','有點']
-adj = ['漂亮','帥','可愛','醜']
+taste = ['嘗起來','味道']
+adverb = ['蠻','有夠','稍微']
+adj = ['好ㄘ','難ㄘ','普通','噁爛']
 
 
-role.append(input("請輸入名字 : "))
+role.append(input("請輸入食物 : "))
 
 def S():
-    return  ROLE() + '你今天' + LOOK() + ADVERB() + ADJ()
+    return  ROLE() + '這東西' + TASTE() + ADVERB() + ADJ()
 
 def ROLE():
     return r.choice(role)
 
-def LOOK():
+def TASTE():
     return r.choice(look)
 
 def ADVERB():
